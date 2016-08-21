@@ -15,15 +15,15 @@ public class DetailsActivity extends AppCompatActivity {
 
         android.widget.TextView exerciseText = (android.widget.TextView) findViewById(R.id.exerciseTitle);
         android.widget.ImageView exerciseImage = (android.widget.ImageView) findViewById(R.id.exerciseImage);
-        LinearLayout MainBG = (LinearLayout) findViewById(R.id.mainBG);
+        LinearLayout mainBG = (LinearLayout) findViewById(R.id.mainBG);
 
         String exerciseTitle = getIntent().getStringExtra(MainActivity.EXTRA_ITEM_TITLE);
         exerciseText.setText(exerciseTitle);
 
-        if (exerciseTitle.equalsIgnoreCase(MainActivity.EXCERCISE_WEIGHTS)) {
+        if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_WEIGHTS)) {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.weight, getApplicationContext().getTheme()));
             mainBG.setBackgroundColor(Color.parseColor("#2ca5f5"));
-        } else if (exerciseTitle.equalsIgnoreCase(MainActivity.EXCERCISE_YOGA)) {
+        } else if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_YOGA)) {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.lotus, getApplicationContext().getTheme()));
             mainBG.setBackgroundColor(Color.parseColor("#916bcd"));
         } else {
