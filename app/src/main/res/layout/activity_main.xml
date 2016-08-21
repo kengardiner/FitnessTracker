@@ -154,7 +154,7 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:background="@drawable/rounded_corners"
-        android:backgroundTint="#6d7b84"
+        android:backgroundTint="#52ad56"
         android:layout_weight="1"
         android:gravity="center_vertical|center_horizontal"
         android:id="@+id/cardioBtn">
