@@ -9,9 +9,9 @@ import android.widget.RelativeLayout;
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_ITEM_TITLE = "extra.item.title";
-    public static final String EXCERCISE_WEIGHTS = "Weight lifting";
-    public static final String EXCERCISE_YOGA = "Yoga";
-    public static final String EXCERCISE_CARDIO = "Cardio";
+    public static final String EXERCISE_WEIGHTS = "Weight lifting";
+    public static final String EXERCISE_YOGA = "Yoga";
+    public static final String EXERCISE_CARDIO = "Cardio";
 
 
     @Override
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         weightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadDetailActivity(MainActivity.EXCERCISE_WEIGHTS);
+                loadDetailActivity(MainActivity.EXERCISE_WEIGHTS);
 
             }
         });
@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
         yogaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadDetailActivity(MainActivity.EXCERCISE_YOGA);
+                loadDetailActivity(MainActivity.EXERCISE_YOGA);
             }
         });
 
         cardioBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadDetailActivity(MainActivity.EXCERCISE_CARDIO);
+                loadDetailActivity(MainActivity.EXERCISE_CARDIO);
             }
         });
 
